@@ -1,0 +1,14 @@
+.view{
+    height: 25%;
+    width: 80%;
+    background-color: #5d5d5d;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10px;
+    margin: auto;
+    margin-top: 5%;
+    border: 5px solid #000;
+    border-radius: 25px ;
+    color: #fff;
+}
