@@ -1,0 +1,29 @@
+.key-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.keypad-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 7px;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+}
+
+.keypad-buttons button{
+    cursor: pointer;
+    border: 2px solid #5d5d5d;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.keypad-buttons button:hover{
+    background-color: #9ab2ef;
+}

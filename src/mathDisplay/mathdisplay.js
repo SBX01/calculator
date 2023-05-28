@@ -3,10 +3,10 @@ import './style.css'
 
 class Mathdisplay extends Component{
     render(){
+        const {valueDisplay} = this.props
         return(
             <span className="view">
-                000
-                000
+                {valueDisplay}
             </span>
         )
     }
