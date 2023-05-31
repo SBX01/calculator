@@ -5,8 +5,7 @@ class KeyButton extends Component{
         const {handleDigitClick,handleOperatorClick,handleEqualClick,handleClearClick} = this.props
         if (typeof key === 'number') {
             // Hacer algo si se hizo clic en un número
-            handleDigitClick(key)
-            console.log('Número clickeado:', key);
+            handleDigitClick(key)            
           } else {
             // Hacer algo si se hizo clic en un símbolo
             switch (key) {
@@ -31,8 +30,7 @@ class KeyButton extends Component{
                 default:
                     handleDigitClick(key)
                     break;
-            }
-            console.log('Símbolo clickeado:', key);
+            }            
         }
     }
     render(){

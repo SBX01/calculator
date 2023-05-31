@@ -66,23 +66,26 @@ class App extends Component {
 
   handleDigitClick = (digit) => {
     const { waitingForOperand,valueDisplay } = this.state
-    console.log(typeof digit);
     if (waitingForOperand) {
       this.setState({
         valueDisplay: String(digit),
         waitingForOperand: false
       })
     } else {
-      this.setState({
-        valueDisplay:
-        valueDisplay === '' ? String(digit) : valueDisplay + digit
-      })
+      if(valueDisplay.length <= 10){
+        this.setState({
+          valueDisplay:
+          valueDisplay === '' ? String(digit) : valueDisplay + digit
+        })
+      }else{
+        console.log('maximo alcazado')
+      }
+      
     }        
   }
 
   render(){
     const { valueDisplay } = this.state;
-    console.log(valueDisplay.length);
     return (
       <div className='App-back' >
         <Calculator
